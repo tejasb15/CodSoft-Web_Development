@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./calculator.css">
+
+</head>
+
+<body>
+
+
+    <div class="calsi">
+        <input type="text" id="inp" placeholder="Enter value..." readonly>
+        <div class="btns">
+            <button type="button" style="background-color: #ff4c4c;" onclick="cls()">C</button>
+            <button type="button" id="btn-style" onclick="cancel()">⌫</button>
+            <button type="button" id="btn-style" onclick="AT_Add('%')">%</button>
+            <button type="button" id="btn-style" onclick="AT_Add('/')">÷</button>
+            <button type="button" onclick="AT_Add(7)">7</button>
+            <button type="button" onclick="AT_Add(8)">8</button>
+            <button type="button" onclick="AT_Add(9)">9</button>
+            <button type="button" id="btn-style" onclick="AT_Add('*')">×</button>
+            <button type="button" onclick="AT_Add(4)">4</button>
+            <button type="button" onclick="AT_Add(5)">5</button>
+            <button type="button" onclick="AT_Add(6)">6</button>
+            <button type="button" id="btn-style" onclick="AT_Add('-')">−</button>
+            <button type="button" onclick="AT_Add(1)">1</button>
+            <button type="button" onclick="AT_Add(2)">2</button>
+            <button type="button" onclick="AT_Add(3)">3</button>
+            <button type="button" id="btn-style" onclick="AT_Add('+')">+</button>
+            <button type="button" onclick="AT_Add(0)">0</button>
+            <button type="button" onclick="AT_Add('.')">.</button>
+            <button type="button" id="btn-style" class="equal" onclick="exe()">=</button>
+        </div>
+    </div>
+
+    <script src="./calculator.js"></script>
+
+</body>
+
+</html>
